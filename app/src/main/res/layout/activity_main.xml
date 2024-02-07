@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_title"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:layout_weight="1"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="2"/>
+
+    <androidx.media3.ui.PlayerView
+        android:layout_weight="0"
+        android:id="@+id/player_control"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:shutter_background_color="#fff" />
+
+</LinearLayout>
