@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">أذكار وأدعية</string>
+    <string name="app_title">أذكار و أدعية بصوت العفاسى</string>
+    <string name="AzkarAlsalah">أذكار ختم الصلاة</string>
+    <string name="AzkarAlsabah">أذكار الصباح</string>
+    <string name="AzkarAlmasa2">أذكار المساء</string>
+    <string name="channel_name">Notification Channel</string>
+    <string name="channel_description">channel_description</string>
+    <string name="reeh">دعاء الريح</string>
+    <string name="Istikhara">دعاء الإستخارة</string>
+    <string name="sa3b">دعاء استصعاب أمر</string>
+    <string name="safar">دعاء السفر</string>
+    <string name="rokia">الرقية الشرعية</string>
+    <string name="matar">دعاء المطر</string>
+    <string name="nawm">أذكار النوم</string>
+    <string name="play_pause">تشغيل/ايقاف</string>
+</resources>
