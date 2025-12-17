@@ -2,65 +2,77 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
-    compileSdk 34
+    compileSdk 36
     defaultConfig {
         multiDexEnabled true
         applicationId 'app.islammedia.azkar_alafasy'
-        minSdkVersion 19
-        targetSdkVersion 34
-        versionCode 3
-        versionName "3"
+        minSdkVersion 21
+        targetSdkVersion 36
+        versionCode 5
+        versionName "5"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    signingConfigs {
+        release {
+            storeFile file('../jks.jks')
+            storePassword '27962796'
+            keyAlias 'key0'
+            keyPassword '27962796'
+        }
     }
     buildTypes {
         release {
             minifyEnabled true
             multiDexEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    buildFeatures {
+        buildConfig true
+    }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     namespace 'com.esmailsasso.azkaralsalah'
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 }
 
 dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    implementation 'androidx.media3:media3-exoplayer:1.3.1'
-    implementation 'androidx.media3:media3-ui:1.3.1'
+    implementation 'androidx.media3:media3-exoplayer:1.5.0'
+    implementation 'androidx.media3:media3-ui:1.5.0'
+    implementation 'androidx.media3:media3-session:1.5.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.core:core-ktx:1.13.0'
-    implementation 'androidx.lifecycle:lifecycle-process:2.7.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.8.7'
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
-    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
 
-    implementation 'com.google.android.gms:play-services-ads:22.0.0'
+    implementation 'com.google.android.gms:play-services-ads:23.5.0'
 
-    def lifecycle_version = "2.7.0"
+    def lifecycle_version = "2.8.7"
 
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
-// ViewModel and LiveData dependencies, now using ktx artifacts:
+    // ViewModel and LiveData dependencies
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
     testImplementation 'junit:junit:4.13.2'
 
     // Mockito for mocking
-    testImplementation 'org.mockito:mockito-core:3.3.3'
+    testImplementation 'org.mockito:mockito-core:5.14.2'
     // AndroidX Test libraries
-    androidTestImplementation 'androidx.test:core:1.5.0'
-    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test:core:1.6.1'
+    androidTestImplementation 'androidx.test:rules:1.6.1'
 }

@@ -13,7 +13,7 @@ import com.google.android.gms.ads.appopen.AppOpenAd
 import java.util.Date
 
 
-class MyApplication : Application() ,  Application.ActivityLifecycleCallbacks{
+class MyApplication : Application(), Application.ActivityLifecycleCallbacks {
 
     private lateinit var appOpenAdManager: AppOpenAdManager
 
@@ -52,8 +52,9 @@ class MyApplication : Application() ,  Application.ActivityLifecycleCallbacks{
 
             isLoadingAd = true
             val request = AdRequest.Builder().build()
+            val adUnitId = if (BuildConfig.DEBUG) TEST_AD_UNIT_ID else AD_UNIT_ID
             AppOpenAd.load(
-                activity, AD_UNIT_ID, request,
+                activity, adUnitId, request,
                 object : AppOpenAd.AppOpenAdLoadCallback() {
 
                     override fun onAdLoaded(ad: AppOpenAd) {
@@ -136,9 +137,11 @@ class MyApplication : Application() ,  Application.ActivityLifecycleCallbacks{
     }
 
     companion object {
+        // Test ad unit ID for debug builds
+        private const val TEST_AD_UNIT_ID = "ca-app-pub-3940256099942544/9257395921"
+        // Real ad unit ID for release builds
         private const val AD_UNIT_ID = "ca-app-pub-6937623243660682/4585820066"
         private const val LOG_TAG = "MyApplication"
-
     }
 
 
