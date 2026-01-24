@@ -1,17 +1,39 @@
 <resources>
-    <string name="app_name">أذكار وأدعية</string>
-    <string name="app_title">أذكار و أدعية بصوت العفاسى</string>
-    <string name="AzkarAlsalah">أذكار ختم الصلاة</string>
-    <string name="AzkarAlsabah">أذكار الصباح</string>
-    <string name="AzkarAlmasa2">أذكار المساء</string>
-    <string name="channel_name">Notification Channel</string>
-    <string name="channel_description">channel_description</string>
-    <string name="reeh">دعاء الريح</string>
-    <string name="Istikhara">دعاء الإستخارة</string>
-    <string name="sa3b">دعاء استصعاب أمر</string>
-    <string name="safar">دعاء السفر</string>
-    <string name="rokia">الرقية الشرعية</string>
-    <string name="matar">دعاء المطر</string>
-    <string name="nawm">أذكار النوم</string>
-    <string name="play_pause">تشغيل/ايقاف</string>
+    <string name="app_name">أذكار</string>
+    <string name="title_in_app">أذكار الصراط المستقيم</string>
+    <string name="more_actions">more</string>
+    <string name="done_image">done</string>
+    <string name="Azkar_as_sabah">أذكار الصباح</string>
+    <string name="Azkar_al_masaa">أذكار المساء</string>
+    <string name="Azkar_istiqath">أذكار الإستيقاظ من النوم</string>
+    <string name="Azkar_zahab_noum">أذكار الذهاب للنوم</string>
+    <string name="Azkar_noum">أذكار النوم</string>
+    <string name="azkar">أذكار</string>
+    <string name="expand">تمديد</string>
+    <string name="collapse">تقليص</string>
+    <string name="refresh">تحديث</string>
+    <string name="more">المزيد</string>
+    <string name="sabah_masaa">أذكار الصباح و المساء</string>
+    <string name="sleeping">أذكار النوم</string>
+    <string name="clothes">أذكار ارتداء الملابس</string>
+    <string name="in_out_door">أذكارأخرى </string>
+    <string name="azkar_app_icon_nav">azkar_app_icon_nav</string>
+    <string name="fadl_ath_thekr_title">فضل الذكر</string>
+    <string name="kh_mn_mnzl">ذكر الخروج من المنزل</string>
+    <string name="dokh_mnzl">ذكر دخول المنزل</string>
+    <string name="zahab_msjed">دعاء الذهاب للمسجد</string>
+    <string name="in_msjed">دعاء دخول المسجد</string>
+    <string name="out_msjed">دعاء الخروج من المسجد</string>
+    <string name="after_salah">الأذكار بعد الصلاة</string>
+    <string name="after_salam_salah">الأذكار بعد السلام من الصلاة</string>
+    <string name="about">عن التطبيق</string>
+    <string name="about_content">
+
+        الأذكار فى هذا التطبيق منسوخة من كتاب حصن المسلم
+        \n
+        للشيخ : سعيد بن علي بن وهف القحطاني
+
+    </string>
+    <string name="download_hisn_almuslim">تحميل كتاب حصن المسلم pdf</string>
+    <string name="sebha">السبحة</string>
 </resources>

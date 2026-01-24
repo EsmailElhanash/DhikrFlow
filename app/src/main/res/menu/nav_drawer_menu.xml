@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/fadl_ath_thekr"
+            android:title="@string/fadl_ath_thekr_title" />
+        <item
+            android:id="@+id/sabah_masaa"
+            android:title="@string/sabah_masaa" />
+
+        <item
+            android:id="@+id/after_salah"
+            android:title="@string/after_salah" />
+
+        <item
+            android:id="@+id/sleeping"
+            android:title="@string/sleeping" />
+        <item
+            android:id="@+id/in_out_door"
+            android:title="@string/in_out_door" />
+        <item
+            android:id="@+id/about"
+            android:title="@string/about" />
+    </group>
+</menu>

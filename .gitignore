@@ -1,22 +1,27 @@
+# Android / Gradle
 *.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-/.idea/caches
-/.idea/
+.gradle/
+local.properties
+/build/
+app/build/
+.cxx/
+.externalNativeBuild/
+captures/
 .DS_Store
-/build
-/app/build
-/captures
-.externalNativeBuild
 
-# Signing keys - NEVER commit these
+# IDE
+.idea/
+.vscode/
+
+# Release artifacts
+*.apk
+*.aab
+app/release/
+*.zip
+
+# Secrets
 *.jks
 *.keystore
 *.pepk
-private_key.pepk
-jks.jks
-
-# Archives
-*.zip
+**/google-services.json
+**/key.properties
