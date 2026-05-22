@@ -1,6 +1,6 @@
-# My Azkar Afasy App
+# DhikrFlow
 
-Android Azkar app with categorized athkar and utilities. Built with Kotlin.
+DhikrFlow app with categorized athkar and utilities. Built with Kotlin.
 
 ## Requirements
 - Android Studio
